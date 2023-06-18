@@ -598,7 +598,6 @@ img {
   letter-spacing: 0.04em;
   color: var(--color-white);
   border: none;
-  gap: 16px;
   min-width: 165px;
   cursor: pointer;
 }
@@ -641,6 +640,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
 .modal-close-btn {
   position: absolute;
   display: flex;
@@ -715,6 +715,7 @@ img {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  fill: var(--color-navy-blue);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field:focus + .form-icon {
@@ -778,6 +779,10 @@ img {
   fill: var(--color-cloud);
   border: none;
 }
+.check-input:focus + .form-agreement-text span {
+  border-color: var(--color-ocean);
+}
+
 .check-icon {
   display: inline-flex;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
