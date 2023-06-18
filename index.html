@@ -51,11 +51,54 @@
             </li>
           </ul>
         </address>
+        <button class="header-burger js-open-menu" type="button">
+          <svg class="" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-container js-menu-container">
+        <button class="mobile-close-btn js-close-menu" type="button">
+          <svg class="" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          
+          <ul class="mobile-nav-list list">
+            <li class="mobile-nav-item">
+              <a class="mobile-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+        <address class="mobile-contact">
+          <ul class="mobile-contact-list list">
+            <li class="mobile-contact-item">
+              <a class="mobile-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-contact-item">
+              <a class="mobile-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <!-- Тут має бути список соцмереж -->
+      </div>
       </div>
     </header>
-    <main>
+    <!-- <main>
       <!--hero-->
-      <section class="hero-section">
+    <!-- <section class="hero-section">
         <div class="hero-container container">
           <h1 class="hero-title title">
             Effective Solutions for Your Business
@@ -64,9 +107,9 @@
             Order Service
           </button>
         </div>
-      </section>
-      <!--abaut-section-->
-      <section class="abaut-section">
+      </section> -->
+    <!--abaut-section-->
+    <!-- <section class="abaut-section">
         <div class="container">
           <h2 hidden class="subtitle">Our advantages</h2>
           <ul class="abaut-list list">
@@ -120,9 +163,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!--portfolio-->
-      <section class="portfolio-section">
+      </section> -->
+    <!--portfolio-->
+    <!-- <section class="portfolio-section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="portfolio-title-list list">
@@ -152,9 +195,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!--team-section-->
-      <section class="team-section">
+      </section> -->
+    <!--team-section-->
+    <!-- <section class="team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-section-list list">
@@ -428,9 +471,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!--customers-section-->
-      <section class="customers-section">
+      </section> -->
+    <!--customers-section-->
+    <!-- <section class="customers-section">
         <div class="container">
           <h2 class="section-title">Customers</h2>
           <ul class="customers-title-list list">
@@ -514,10 +557,10 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main>
+      </section> -->
+    <!-- </main> -->
     <!--footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <div class="footer-container-info">
           <a class="logo-link logo-footer link" href="./index.html"
@@ -606,7 +649,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal window-->
 
     <div class="backdrop is-hidden" data-modal>
@@ -633,7 +676,7 @@
             </div>
           </div>
           <div class="form-wrapper">
-          <label class="form-label" for="modal_phone">Phone</label>
+            <label class="form-label" for="modal_phone">Phone</label>
 
             <div class="form-name">
               <input
@@ -648,8 +691,8 @@
             </div>
           </div>
           <div class="form-wrapper">
-          <label class="form-label" for="modal_email">Email</label>
-          
+            <label class="form-label" for="modal_email">Email</label>
+
             <div class="form-name">
               <input
                 class="form-field"
@@ -696,6 +739,13 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
