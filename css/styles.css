@@ -232,14 +232,19 @@ img {
 @media screen and (min-width: 768px) {
   .header-nav-list {
     display: flex;
+    align-items: center;
+    gap: 40px;
   }
 }
 .header-contact-list {
   display: none;
+  
 }
 @media screen and (min-width: 768px) {
   .header-contact-list {
     display: flex;
+    flex-direction: column;
+    row-gap: 12px;
   }
 }
 .header-burger {
@@ -258,7 +263,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 32px;
+  padding: 80px 35px 40px 40px;
   background-color: var(--color-white);
   z-index: 999;
 display: flex;
@@ -285,6 +290,27 @@ border: 1px solid var(--color-navy-blue);
 }
 .mobile-nav {
   margin-bottom: auto;
+}
+.mobile-link.active {
+  color: var(--color-ocean);
+}
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.mobile-nav-item {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+color: var(--color-navy-blue);
+}
+.mobile-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 48px;
 }
 /* .header {
   border-bottom: -1px solid var(--color-cornflower);
@@ -345,7 +371,7 @@ border: 1px solid var(--color-navy-blue);
   | Hero styles
   |============================
 */
-.hero-title {
+/* .hero-title {
   padding: 0 313px 48px 313px;
   max-width: 496px;
   box-sizing: content-box;
@@ -380,14 +406,14 @@ border: 1px solid var(--color-navy-blue);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /**
   |============================
   | Abaut styles
   |============================
 */
-.abaut-icons {
+/* .abaut-icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -408,22 +434,22 @@ border: 1px solid var(--color-navy-blue);
 .abaut-item {
   width: 264px;
   min-height: 104px;
-}
+} */
 /**
   |============================
   | Portfolio styles
   |============================
 */
-.portfolio-section {
+/* .portfolio-section {
   padding-bottom: 120px;
 }
 .portfolio-title-list {
   display: flex;
   gap: 24px;
-}
+} */
 
 /* Socials icon styles */
-.socials {
+/* .socials {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -446,14 +472,14 @@ border: 1px solid var(--color-navy-blue);
 .socials-link:hover,
 .socials-link:focus {
   background-color: var(--color-ocean);
-}
+} */
 /**
   |============================
   | Team styles
   |============================
 */
 
-.team-section {
+/* .team-section {
   background-color: var(--color-cloud);
   padding-top: 120px;
   padding-bottom: 120px;
@@ -471,13 +497,13 @@ border: 1px solid var(--color-navy-blue);
 }
 .team-container {
   padding: 32px 0 32px 0;
-}
+} */
 /**
   |============================
   | Filters style
   |============================
 */
-.filter-section {
+/* .filter-section {
   padding: 96px 0 120px;
 }
 .filter-section-list {
@@ -485,13 +511,13 @@ border: 1px solid var(--color-navy-blue);
   justify-content: center;
   margin-bottom: 72px;
   gap: 24px;
-}
+} */
 /**
   |============================
   | Card section style
   |============================
 */
-.card-set {
+/* .card-set {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
@@ -539,13 +565,13 @@ border: 1px solid var(--color-navy-blue);
   width: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 /**
   |============================
   | Customers styles
   |============================
 */
-.customers-section {
+/* .customers-section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -577,13 +603,13 @@ border: 1px solid var(--color-navy-blue);
 }
 .customers-icon {
   fill: currentColor;
-}
+} */
 /**
   |============================
   | Footer styles
   |============================
 */
-.footer {
+/* .footer {
   background-color: var(--color-navy-blue);
   padding-top: 100px;
   padding-bottom: 100px;
@@ -634,11 +660,11 @@ border: 1px solid var(--color-navy-blue);
 }
 .footer-container-info {
   margin-right: 120px;
-}
+} */
 
 /* Footer subscrible styles*/
 
-.footer-subscribe {
+/* .footer-subscribe {
   margin-left: 80px;
 }
 .footer-subscribe-text {
@@ -689,14 +715,14 @@ border: 1px solid var(--color-navy-blue);
 .icons-email {
   fill: var(--color-white);
   margin-left: 16px;
-}
+} */
 
 /**
   |============================
   | Modal window styles
   |============================
 */
-.backdrop {
+/* .backdrop {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -891,4 +917,4 @@ border: 1px solid var(--color-navy-blue);
   cursor: pointer;
   border: none;
 
-}
+} */
