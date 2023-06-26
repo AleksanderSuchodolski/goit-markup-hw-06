@@ -295,6 +295,8 @@ img {
 @media screen and (min-width: 768px) {
   .header-contact {
     margin-left: auto;
+    font-style: normal;
+
     color: var(--color-slate);
     transition-property: color;
     transition-duration: 250ms;
@@ -361,6 +363,9 @@ img {
 .mobile-nav {
   margin-bottom: auto;
 }
+.mobile-link {
+  color: var(--color-navy-blue);
+}
 .mobile-link.active {
   color: var(--color-ocean);
 }
@@ -376,6 +381,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
 }
+
 .mobile-contact-list {
   display: flex;
   flex-direction: column;
@@ -573,7 +579,7 @@ img {
 .abaut-icons {
   display: none;
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
   .abaut-icons {
     display: flex;
     justify-content: center;
@@ -676,6 +682,11 @@ img {
     padding-bottom: 120px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .t-container {
+      max-width: 584px;
+    }
+}
 .team-section-list {
   display: flex;
   flex-wrap: wrap;
@@ -688,8 +699,8 @@ img {
   }
 }
 .team-title-item {
-  min-width: 264px;
-  min-height: 428px;
+  max-width: 264px;
+  height: calc((100% - 64px) / 2);
   background-color: var(--color-white);
   text-align: center;
   border-radius: 0 0 4px 4px;
@@ -699,6 +710,7 @@ img {
 .team-container {
   padding: 32px 0 32px 0;
 }
+
 
 /* Socials icon styles */
 
@@ -742,6 +754,11 @@ img {
     padding-bottom: 120px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .customers-container {
+    max-width: 584px;
+  }
+}
 .customers-title-list {
   display: flex;
   flex-wrap: wrap;
@@ -754,18 +771,21 @@ img {
   }
 }
 .customers-title-item {
-  width: 190px;
-  height: 88px;
+  width: calc((100% - 16px) / 2);
+  height: calc((100% - 144px) / 3);
   text-align: center;
 }
-@media only screen and (max-width: 428px) {
-  .customers-title-item {
-    margin: 0 auto;
-  }
-}
+
 @media only screen and (min-width: 768px) {
   .customers-title-item {
-    width: 168px;
+    width: calc((100% - 48px) / 3);
+    height: calc((100% - 72px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .customers-title-item {
+    width: calc((100% - 120px) / 6);
+    min-height: 88px;
   }
 }
 .customers-link {
