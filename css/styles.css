@@ -785,7 +785,6 @@ img {
 @media only screen and (min-width: 1158px) {
   .customers-title-item {
     width: calc((100% - 120px) / 6);
-    min-height: 88px;
   }
 }
 .customers-link {
