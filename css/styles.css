@@ -772,14 +772,13 @@ img {
 }
 .customers-title-item {
   width: calc((100% - 16px) / 2);
-  height: calc((100% - 144px) / 3);
+  height: 88px;
   text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   .customers-title-item {
     width: calc((100% - 48px) / 3);
-    height: calc((100% - 72px) / 2);
   }
 }
 @media only screen and (min-width: 1158px) {
